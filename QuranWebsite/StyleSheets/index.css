@@ -1,0 +1,563 @@
+* {
+  /*CSS Reset*/
+  margin: 0;
+  padding: 0;
+  transition: all 1s;
+  scrollbar-color: #259be1 #e60b0b;
+}
+
+@font-face {
+  font-family: Roboto_Slab;
+  src: url("Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Shojumaru;
+  src: url("Shojumaru/Shojumaru-Regular.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: rgba(169, 210, 132, 0.5);
+  overflow-x: hidden;
+}
+
+/* Works on Firefox */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: white rgba(31, 34, 35, 1);
+}
+
+/* Works on Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+  width: 1vw;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(31, 34, 35, 1);
+  width: 1vw;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: yellow;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: greenyellow;
+  border-radius: 10px;
+}
+
+/* < Header Design*/
+
+header {
+  background-color: black;
+  /* position: fixed; */
+  position: sticky;
+  top: 0vh;
+  left: 0vw;
+}
+
+ul.links-ul {
+  display: flex;
+  justify-content: center;
+  margin: 0vh auto;
+  width: 60vw;
+}
+
+nav.navigation-menu {
+  width: 100vw;
+  box-shadow: 0px 0px 50px black;
+  background-color: rgba(132, 155, 111, 0.5);
+}
+
+li.navigation-menu-list-items {
+  display: inline-block;
+  margin: 0vh 0.5vw;
+  padding: 2vh 0.87vw;
+}
+
+a.navigation-item-links {
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  transition: all;
+  transition-duration: 1s;
+}
+
+a.navigation-item-links:hover {
+  color: greenyellow;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 20vw;
+  background-color: rgba(169, 210, 132, 1);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: display 2s linear;
+}
+
+.dropdown-content {
+  transition: all;
+  transition-duration: 2s;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1.5vh 1.5vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  text-align: center;
+  transition: all;
+  transition-duration: 1s;
+}
+
+.dropdown-content a:hover {
+  background-color: green;
+  color: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.more {
+  transition: all;
+  transition-duration: 5s;
+}
+
+.rotate {
+  transition: all;
+  transition-duration: 0.5s;
+  display: inline-block;
+}
+
+.dropdown:hover .rotate {
+  transform: rotate(360deg);
+  display: inline-block;
+}
+
+/*FOR HANDABLE DEVICES*/
+
+#bar {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 0.5vh;
+  right: 1vw;
+  display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 8vw;
+  height: 0.5vh;
+  background-color: white;
+  margin: 0.5vh 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+.change .bar2 {
+  opacity: 1;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  opacity: 0;
+
+}
+
+#menu-links {
+  display: none;
+}
+
+#menu-links div {
+  padding: 2vh 2vw;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(132, 155, 111, 1);
+  color:blue
+}
+
+#menu-links div:hover {
+  text-align: center;
+  font-weight: bold;
+  background-color: green;
+  color:chartreuse
+}
+
+/*Header Design > */
+
+/*=========== BACKGROUND SECTION ===========*/
+
+#background {
+  background: url("Media/Quraan.jpg") center center/cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  top: 0vh;
+  position: relative;
+  left: 0vw;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  padding: 0vh 0vw;
+  z-index: -1;
+}
+
+.main-heading {
+  display: flex;
+  padding: 10vh 10vw;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 6.25rem;
+}
+
+/* background section>  */
+
+/*===== HOME SECTION =====*/
+
+#Home {
+  padding-bottom: 2vh;
+}
+
+#ayat-of-the-day {
+  background-color: rgba(169, 210, 132, 1);
+  padding: 5vh 1vw;
+  text-align: center;
+}
+
+.ayat-heading {
+  font-size: 4rem;
+}
+
+#ayat {
+  font-size: 3rem;
+}
+
+#home-hr {
+  width: 20vw;
+  margin: 2vh auto;
+  color: black;
+}
+
+#ayat-number {
+  font-family: "Trebuchet MS", "sans-serif";
+}
+
+div.backgorund-img {
+  background: url("Media/quranTeaching.jpg") center center/cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Shojumaru, Helvetica, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: greenyellow;
+}
+
+div.learn-promotion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vh 1vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+button.start-learning {
+  display: block;
+  margin: 0.5vh auto;
+  margin-top: 1vh;
+  padding: 2vh 2vw;
+  width: 30vw;
+  border-radius: 20px;
+  background-color: rgba(175, 204, 105, 1);
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  transition: all;
+  transition-duration: 1s;
+}
+
+button.start-learning:hover {
+  background-color: green;
+  border: 2px solid rgba(0, 0, 205, 0.3);
+  color: white;
+}
+
+div.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div.course-box {
+  margin: 1.5vh 1.5vw;
+  padding: 1vh 1vw 1vh;
+  transition: all;
+  transition-duration: 2s;
+  font-size: 1rem;
+}
+
+div.course-box:hover {
+  box-shadow: 0px 0px 8px 5px black;
+}
+
+div.course-box h3 {
+  padding: 2vh 2vw;
+  font-size: 2rem;
+}
+
+div.course-box p {
+  padding: 1vh 1vw;
+  height: 20vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+div.side-img img {
+  width: 25vw;
+  height: 25vh;
+  border-radius: 10px;
+}
+
+div.course-box button {
+  border-radius: 10px;
+  border: 1px solid black;
+  color: black;
+  background-color: rgba(175, 204, 105, 1);
+  padding: 1vh 1vw;
+  margin: 0vh auto;
+  width: 20vw;
+  margin-top: 1vh;
+  font-size: 1.3rem;
+  transition: all;
+  transition-duration: 1s;
+}
+
+div.course-box button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+/* Home section>  */
+
+/*===== BLOG SECTION =====*/
+
+#Blogs {
+  /* background-color: rgba(100, 149, 237, 1); */
+  padding: 3vh 3vw;
+}
+
+.blogs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3vh 3vw;
+}
+
+.blog-box {
+  border: 3px double green;
+  margin: 2vh 2vw;
+  padding: 2vh 2vw;
+}
+
+div.blog-img {
+  margin: 1vh 1vw;
+  border: 3px double green;
+}
+
+div.blog-img img {
+  margin: 1vh 1vw;
+  width: 30vw;
+}
+
+.author a {
+  color: grey;
+  transition: all;
+  transition-duration: 1s;
+  text-decoration: underline;
+}
+
+.author a:hover {
+  color: darkolivegreen;
+  text-decoration: none;
+}
+
+.read-duration {
+  color: red;
+}
+
+.blog-desc {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  padding: 1.5vh 1.5vw;
+}
+
+.main-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-content {
+  padding: 3vh 3vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 30vh;
+}
+
+.blog-tags {
+  border: 2px solid rgba(158, 158, 158, 0.3);
+  color: black;
+  padding: 0.2vh 0.5vw;
+  font-size: 1rem;
+  margin: 1vh 0.3vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all;
+  transition-duration: 1s;
+}
+
+.blog-tags:hover {
+  background-color: grey;
+  color: white;
+  cursor: default;
+  border: 2px solid grey;
+}
+
+.read-more {
+  padding: 1vh 1vw;
+  display: block;
+  margin: 1vh auto;
+  border-radius: 5px;
+  border: 1px solid rgba(175, 204, 105, 1);
+  background-color: rgba(175, 204, 105, 1);
+  transition: all;
+  transition-duration: 2s;
+}
+
+.read-more:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+/*===== blog section =====*/
+
+/*CONTACT SECTION*/
+
+#Contact {
+  /* background-color: rgba(100, 149, 237, 1); */
+  padding: 50px;
+}
+
+/* <footer  */
+
+footer {
+  background-color: black;
+  color: whitesmoke;
+  padding: 3vh 3vw;
+  text-align: center;
+}
+
+/* footer>  */
+
+/* ===== UTILITY CLASSES =====*/
+
+a {
+  text-decoration: none;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 3rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.cursive-fonts {
+  font-family: "Staatliches", cursive;
+}
+
+.arabic {
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+button.More {
+  display: block;
+  background-color: rgba(175, 204, 105, 1);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  margin-top: 2vh;
+  padding: 2vh 2vw;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.7rem;
+  transition: all;
+  text-align: center;
+  transition-duration: 1s;
+  margin: 0px auto;
+  /* overflow: hidden; */
+  width: 40vw;
+}
+
+button.More:hover {
+  width: 80vw !important;
+  color: white;
+  background-color: green;
+  border: 2px solid green;
+  cursor: pointer;
+}
+
+/*===== Utility Classes =====*/
