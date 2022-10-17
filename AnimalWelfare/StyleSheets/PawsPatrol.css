@@ -1,0 +1,244 @@
+    /*===== CSS Reset  =====*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    /*===== CSS Variables =====*/
+    /* Navigation Bar List */
+    
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+    }
+    
+    #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    
+    #navbar ul {
+        display: flex;
+    }
+    
+    #navbar ul li {
+        list-style-type: none;
+        font-size: 1.5rem;
+    }
+    
+    #navbar ul li a {
+        display: block;
+        color: whitesmoke;
+        padding: 5px 35px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-family: 'Ubuntu Mono', monospace;
+    }
+    
+    #navbar ul li a:hover {
+        color: cyan;
+        background-color: blue;
+    }
+    /* Logo Division */
+    
+    #logo {
+        margin: 10px 20px;
+    }
+    /* Logo Image */
+    
+    #logo img {
+        margin: 0px 5px;
+        height: 60px;
+        filter: invert(100%);
+        border-radius: 100px;
+    }
+    /* H O M E  S E C T I O N */
+    
+    #homesec {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 200px;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        margin-bottom: 50px;
+    }
+    
+    #homesec::before {
+        content: "";
+        background: url(../StyleSheets/IMG/woods.jpeg) center center/cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.89;
+    }
+    
+    #homesec h1 {
+        color: white;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    #homesec p {
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .mainH {
+        font-size: 4rem;
+        padding: 12px;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        border: 2px solid white;
+        color: white;
+        background-color: black;
+        margin: 30px 15px 15px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    /* S E R V I C E S  S E C T I O N */
+    
+    #servicesbox {
+        margin: 40px;
+        display: flex;
+    }
+    
+    #servicesH {
+        margin: 330px 3px 3px 3px;
+    }
+    
+    #servicesbox .box {
+        padding: 35px;
+        margin: 3px 6px;
+        background-color: rgb(242 242 245);
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+    
+    #servicesbox .box img {
+        height: 150px;
+        display: block;
+        margin: auto;
+        filter: invert(100%);
+    }
+    /* C L I E N T  S E C T I O N */
+    
+    #clientsec {
+        height: 400px;
+        position: relative;
+    }
+    
+    #clientsec::before {
+        content: "";
+        position: absolute;
+        background: url(../StyleSheets/IMG/teamwork.jpeg)center center/cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 400px;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    
+    #clients {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #clients img {
+        height: 250px;        
+        width: 250px;
+        border: 2px solid black;
+        
+
+    }
+    
+    #clients img:hover {
+
+    }
+    
+    .clientsbox {
+        padding: 35px;
+    }
+    /* C O N T A C T  S E C T I O N */
+    
+    #contactsec {
+        position: relative;
+    }
+    
+    #contactsec::before {
+        position: relative;
+        content: "";
+        background: url(../StyleSheets/IMG/contact.png) no-repeat center center/cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    
+    #contactbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 35px;
+    }
+    
+    #contactbox input,
+    #contactbox textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 20px;
+        font-size: 1.1rem;
+    }
+    
+    #contactbox form {
+        width: 40%;
+    }
+    
+    #contactbox label {
+        font-size: 1.3rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    /* Footer  */
+    
+    footer {
+        background-color: black;
+        color: whitesmoke;
+        padding: 9px 20px;
+    }
+    /* Utility Properties */
+    
+    .center {
+        text-align: center;
+    }
+    
+    .Hsecondary {
+        font-size: 2rem;
+        font-family: 'Ubuntu', sans-serif;
+        padding: 20px;
+    }

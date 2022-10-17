@@ -1,0 +1,99 @@
+/* ==== F O R  P H O N E ==== */
+
+
+/* N A V I G A T I O N  M E N U */
+
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a {
+    font-size: 1rem;
+    padding: 0px 10px;
+    padding-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* H O M E  S E C T I O N */
+
+#homesec {
+    height: 370px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+}
+
+#homesec::before {
+    height: 500px;
+}
+
+#homesec p {
+    font-size: 1rem;
+}
+
+
+/* S E R V I C E S  S E C T I O N */
+
+
+/* #servicessec {} */
+
+#servicesbox {
+    flex-direction: column;
+}
+
+#servicesbox .box {
+    padding: 35px;
+    margin: 3px 0px;
+}
+
+#servicesH {
+    margin: 50px 3px 3px 3px
+}
+
+
+/* C L I E N T  S E C T I O N */
+
+#clients {
+    flex-wrap: wrap;
+}
+
+#clients img {
+    margin: 2px 4px;
+    width: 100px;
+        height: 100px;
+    height: auto;
+}
+
+
+/* C O N T A C T  S E C T I O N */
+
+
+/* #contactsec {} */
+
+#contactbox form {
+    width: 80%;
+}
+
+
+/* F O O T E R  S E C T I O N */
+
+
+/* footer {} */
+
+
+/* U T I L I T Y  S E C T I O N */
+
+.mainH {
+    font-size: 25px;
+}
+
+.btn {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+
+/* .center {} */
+
+
+/* .Hsecondary {} */
