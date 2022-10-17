@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  --Color1: red;
+  --Color2: yellow;
+}
+h1 {
+  font-size: 8vw;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+h2 {
+  font-family: cursive;
+  text-align: center;
+  padding: 5px;
+  background-color: var(--Color2);
+}
+/* S C R O L L  B A R */
+::-webkit-scrollbar {
+  width: 12px;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--Color1);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+/* Handle on hover */
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--Color2);
+}
+
+body {
+  overflow-x: hidden;
+}
+/* MAIN ELEMENTS */
+header {
+  overflow-x: inherit;
+  background-color: var(--Color1);
+  position: sticky;
+  top: 0px;
+  transition: 0.3s;
+}
+header:hover {
+  box-shadow: 0px 7px 10px black;
+}
+
+/* H E A D E R */
+.NavBar {
+  padding: 5px 15px;
+  display: flex;
+}
+#NavBarLogo {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.NavBar ul {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.NavBar ul li {
+  list-style-type: none;
+  margin: 0px 2px;
+  padding: 0px 5px;
+}
+.NavBar ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: cursive;
+  text-align: center;
+  font-weight: bold;
+}
+.NavBar ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.BtnContainer {
+  float: right;
+  display: flex;
+  position: relative;
+  bottom: 65px;
+  width: 40%;
+}
+#SearchBar {
+  padding: 7px 10px;
+  margin: auto;
+  width: 80%;
+  font-family: cursive;
+}
+
+#BtnSearch {
+  padding: 7px 10px;
+  cursor: pointer;
+  width: 20%;
+  background-color: var(--Color2);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* M A I N */
+#Cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.MyCard {
+  margin: 2% auto;
+  padding: 10px 0px;
+  background-color: blue;
+  border: 2px solid red;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+/* sssssssssssssssssss */
+/* F O O T E R */
+footer {
+  padding: 25px;
+  background-color: black;
+  color: white;
+  background-color: darkgray;
+}
