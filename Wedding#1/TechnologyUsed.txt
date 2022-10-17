@@ -1,3 +1,4 @@
  Bootstrap
  HTML
- Single Page Website Front End
+ Single Page Website Front End,
+ Sorry for not optimized images.
