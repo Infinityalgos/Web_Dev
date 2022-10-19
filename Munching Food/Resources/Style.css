@@ -3,8 +3,13 @@
   padding: 0px;
 }
 html {
-  --Color1: red;
-  --Color2: yellow;
+  /* colors */
+  --Color1: royalblue;
+  --Color2: skyblue;
+  --Color3: black;
+  --Color4: white;
+  /* Fonts  */
+  --Font1: cursive;
 }
 h1 {
   font-size: 8vw;
@@ -12,7 +17,8 @@ h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 h2 {
-  font-family: cursive;
+  font-size: 4vw;
+  font-family: var(--Font1);
   text-align: center;
   padding: 5px;
   background-color: var(--Color2);
@@ -94,12 +100,12 @@ header:hover {
   padding: 7px 10px;
   margin: auto;
   width: 80%;
-  font-family: cursive;
+  font-family: var(--Font1);
 }
 
 #BtnSearch {
   padding: 7px 10px;
-  cursor: pointer;
+  cursor: cell;
   width: 20%;
   background-color: var(--Color2);
   font-weight: bold;
@@ -110,17 +116,109 @@ header:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: space-between;
 }
 .MyCard {
   margin: 2% auto;
-  padding: 10px 0px;
-  background-color: blue;
+  /* padding: 10px 0px; */
   border: 2px solid red;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
   text-align: center;
+  transition: 0.5s;
 }
-/* sssssssssssssssssss */
+.MyCard:hover {
+  box-shadow: 1px 1px 30px 1px black;
+}
+.MyCard h3 {
+  height: 10%;
+  font-family: var(--Font1);
+  background-color: var(--Color2);
+}
+.MyCard button {
+  padding: 10px;
+  border: 2px solid var(--Color1);
+  border-radius: 10px;
+  background-color: var(--Color2);
+}
+.MyCard button:hover {
+  width: 30%;
+}
+.CardBgImg {
+  width: 100%;
+  height: 30%;
+}
+#C1 {
+  background-image: url("/Resources/Content\ Resources/Images/C1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#C2 {
+  background-image: url("/Resources/Content\ Resources/Images/C2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#C3 {
+  background-image: url("/Resources/Content\ Resources/Images/C3.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#C4 {
+  background-image: url("/Resources/Content\ Resources/Images/C4.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#C5 {
+  background-image: url("/Resources/Content\ Resources/Images/C5.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#C6 {
+  background-image: url("/Resources/Content\ Resources/Images/C6.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#C7 {
+  background-image: url("/Resources/Content\ Resources/Images/C7.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#C8 {
+  background-image: url("/Resources/Content\ Resources/Images/C8.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#C9 {
+  background-image: url("/Resources/Content\ Resources/Images/C9.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#C10 {
+  background-image: url("/Resources/Content\ Resources/Images/C10.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#C11 {
+  background-image: url("/Resources/Content\ Resources/Images/C11.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#C12 {
+  background-image: url("/Resources/Content\ Resources/Images/C12.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.CardContent {
+  padding: 20px;
+  /* border: 2px solid green; */
+  height: 30%;
+}
+.CardContent h4 {
+  /* .. */
+}
+
 /* F O O T E R */
 footer {
   padding: 25px;
