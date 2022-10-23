@@ -5,6 +5,8 @@
   #NavBarLogo {
     display: block;
     margin: auto;
+    width: 60px;
+    height: 60px;
   }
 
   .NavBar ul {

@@ -26,19 +26,17 @@ h2 {
 /* S C R O L L  B A R */
 ::-webkit-scrollbar {
   width: 12px;
-  display: none;
+  /* display: none; */
 }
 ::-webkit-scrollbar-thumb {
   background: var(--Color1);
 }
-::-webkit-scrollbar-thumb:hover {
-  background: black;
-}
-/* Handle on hover */
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: var(--Color2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: black;
 }
 
 body {
@@ -101,11 +99,12 @@ header:hover {
   margin: auto;
   width: 80%;
   font-family: var(--Font1);
+  display: block;
 }
 
 #BtnSearch {
   padding: 7px 10px;
-  cursor: cell;
+  cursor: pointer;
   width: 20%;
   background-color: var(--Color2);
   font-weight: bold;
@@ -149,64 +148,65 @@ header:hover {
   width: 100%;
   height: 30%;
 }
+/* Card Featured Images */
 #C1 {
-  background-image: url("/Resources/Content\ Resources/Images/C1.jpg");
+  background-image: url("ContentResources/Images/C1.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 #C2 {
-  background-image: url("/Resources/Content\ Resources/Images/C2.jpg");
+  background-image: url("ContentResources/Images/C2.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 #C3 {
-  background-image: url("/Resources/Content\ Resources/Images/C3.jpg");
+  background-image: url("ContentResources/Images/C3.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 #C4 {
-  background-image: url("/Resources/Content\ Resources/Images/C4.jpg");
+  background-image: url("ContentResources/Images/C4.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 #C5 {
-  background-image: url("/Resources/Content\ Resources/Images/C5.jpg");
+  background-image: url("ContentResources/Images/C5.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 #C6 {
-  background-image: url("/Resources/Content\ Resources/Images/C6.jpg");
+  background-image: url("ContentResources/Images/C6.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 #C7 {
-  background-image: url("/Resources/Content\ Resources/Images/C7.jpg");
+  background-image: url("ContentResources/Images/C7.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 #C8 {
-  background-image: url("/Resources/Content\ Resources/Images/C8.jpg");
+  background-image: url("ContentResources/Images/C8.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 #C9 {
-  background-image: url("/Resources/Content\ Resources/Images/C9.jpg");
+  background-image: url("ContentResources/Images/C9.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 #C10 {
-  background-image: url("/Resources/Content\ Resources/Images/C10.jpg");
+  background-image: url("ContentResources/Images/C10.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 #C11 {
-  background-image: url("/Resources/Content\ Resources/Images/C11.jpg");
+  background-image: url("ContentResources/Images/C11.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 #C12 {
-  background-image: url("/Resources/Content\ Resources/Images/C12.jpg");
+  background-image: url("ContentResources/Images/C12.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -216,13 +216,17 @@ header:hover {
   height: 30%;
 }
 .CardContent h4 {
-  /* .. */
+  font-family: cursive;
 }
-
+#TopChefs {
+  /* Contains a Slider  */
+  height: 50vh;
+  background-color: aqua;
+}
 /* F O O T E R */
 footer {
+  text-align: center;
   padding: 25px;
   background-color: black;
   color: white;
-  background-color: darkgray;
 }
