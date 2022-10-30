@@ -1,0 +1,128 @@
+* {
+    /* css reset  */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* === HEADER === */
+
+header {
+    color: white;
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900/?construction,mason") center center/cover;
+    background-attachment: fixed;
+}
+
+.main-heading {
+    font-size: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+
+/* === NAVIGATION MENU === */
+
+nav {
+    background-color: rgba(66, 136, 251, 1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0vh 0vw 2vh;
+    overflow: hidden;
+}
+
+#nav-list {
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav-links {
+    padding: 2vh 1vw;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.nav-links a {
+    color: whitesmoke;
+    font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-links:hover {
+    background-color: rgba(11, 63, 255, 1);
+}
+
+.planning {
+    display: flex;
+    padding: 2vh 0vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: rgba(66, 136, 251, 1) white;
+    scrollbar-width: thick;
+}
+
+.plan {
+    margin: 0 3vw;
+}
+
+.plan img {
+    display: block;
+    border-radius: 50%;
+    margin: 0.5vh auto;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+
+.caption {
+    position: absolute;
+    color: white;
+}
+
+
+/* === FOOTER === */
+
+footer {
+    background-color: rgba(36, 39, 41, 1);
+    color: white;
+    padding: 2vh 2vw;
+}
+
+
+/* === UTILITY CLASSES === */
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
